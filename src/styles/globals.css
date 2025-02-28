@@ -8,6 +8,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --white: #ffffff;
   --dark-layer-1: rgb(40, 40, 40);
   --dark-layer-2: rgb(26, 26, 26);
   --dark-label-2: rgba(239, 241, 246, 0.75);
@@ -45,15 +46,18 @@
 .bg-olive { background-color: var(--olive); }
 .bg-dark-green-s { background-color: var(--dark-green-s); }
 .bg-dark-blue-s { background-color: var(--dark-blue-s); }
+.bg-white { background-color: var(--white); }
 
 /* ✅ Text Colors */
 .text-brand-orange { color: var(--brand-orange); }
 .text-dark-yellow { color: var(--dark-yellow); }
 .text-dark-pink { color: var(--dark-pink); }
+.text-white { color: var(--white); }
 
 /* ✅ Hover Effects */
 .hover\:bg-brand-orange:hover { background-color: var(--brand-orange); }
 .hover\:text-brand-orange:hover { color: var(--brand-orange);}
+.hover\:bg-white:hover { background-color: var(--white); }
 
 @media (prefers-color-scheme: dark) {
   :root {
