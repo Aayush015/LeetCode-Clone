@@ -6,9 +6,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   --white: #ffffff;
+  --black: #000000;
   --dark-layer-1: rgb(40, 40, 40);
   --dark-layer-2: rgb(26, 26, 26);
   --dark-label-2: rgba(239, 241, 246, 0.75);
@@ -26,6 +25,7 @@
   --olive: rgb(0, 184, 163);
   --dark-green-s: rgb(44, 187, 93);
   --dark-blue-s: rgb(10, 132, 255);
+  --gray-900: rgb(15, 23, 42);
 }
 
 /* ✅ Background Colors */
@@ -47,17 +47,25 @@
 .bg-dark-green-s { background-color: var(--dark-green-s); }
 .bg-dark-blue-s { background-color: var(--dark-blue-s); }
 .bg-white { background-color: var(--white); }
+.bg-gray-900 { background-color: var(--gray-900); }
 
 /* ✅ Text Colors */
 .text-brand-orange { color: var(--brand-orange); }
 .text-dark-yellow { color: var(--dark-yellow); }
 .text-dark-pink { color: var(--dark-pink); }
 .text-white { color: var(--white); }
+.text-black {color: var(--black); }
 
 /* ✅ Hover Effects */
 .hover\:bg-brand-orange:hover { background-color: var(--brand-orange); }
 .hover\:text-brand-orange:hover { color: var(--brand-orange);}
 .hover\:bg-white:hover { background-color: var(--white); }
+
+/* ✅ Opacity */
+.bg-opacity-60 { background-color: rgba(0, 0, 0, 0.6) !important; }
+
+/* ✅ Gradients */
+.bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--brand-orange), var(--gray-900)); }
 
 @media (prefers-color-scheme: dark) {
   :root {
